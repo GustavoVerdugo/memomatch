@@ -79,7 +79,6 @@ const Board: React.FC = () => {
   useEffect(() => {
     if (hits === cards.length / 2 && cards.length > 0) {
       handleConfetti()
-      alert(`Felicidades, ${userName}! Gananste!`);
       resetGame();
     }
   }, [hits, cards.length, resetGame]);
