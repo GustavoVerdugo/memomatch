@@ -1,24 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Juego MemoMatch 🧠🎉
 
-## Getting Started
+MemoMatch es un juego de memoria interactivo y divertido, creado con React, Next.js, TypeScript, React Query y Zustand. El juego desafía a los jugadores a emparejar imágenes de animales mientras se realiza un seguimiento de los éxitos y errores. Está diseñado para ser responsivo, accesible y eficiente, brindando una experiencia atractiva para todas las edades.
 
-First, run the development server:
+## Installation
 
+Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
+
+1. Clonar el repo
+```bash
+git clone https://github.com/tuusuario/memomatch.git
+cd memomatch
+```
+2. Instala las dependencias (debes usar --legacy-peer-deps debido a que se uso Nextjs15 y hay problemas de compatibilidad)
+```bash
+npm install --legacy-peer-deps
+```
+3. Ejecutar tests (opcional)
+```bash
+npm run test
+```
+4. Ejecutar servidor local
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Navega en [http://localhost:3000](http://localhost:3000)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Uso
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Cuando inicie el juego, ingresa tu nombre para comenzar.
+- Haz clic en las cartas para voltear y encontrar los pares.
+- El juego mostrará tu puntaje y errores.
 
 ## Learn More
 
@@ -28,8 +39,6 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
