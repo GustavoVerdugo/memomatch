@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import React, { useEffect } from 'react';
 import Scoreboard from '../ScoreBoard';
 import Card from '../Card';
 import useGameStore from '@/store/useGameStore';

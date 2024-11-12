@@ -2,7 +2,6 @@
 import Board from "@/components/Board";
 import WelcomeModal from "@/components/WelcomeModal";
 import useGameStore from "@/store/useGameStore";
-import { useEffect } from "react";
 
 export default function Home() {
   const userName = useGameStore((state) => state.userName);

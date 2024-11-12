@@ -15,14 +15,14 @@ const Confetti: React.FC<SkeletonWithConfettiProps> = ({ duration = 15000, unMou
     const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
-    let interval = setInterval(function () {
-      let timeLeft = animationEnd - Date.now();
+    const interval = setInterval(function () {
+      const timeLeft = animationEnd - Date.now();
       if (timeLeft <= 0) {
         clearInterval(interval);
         unMount()
       }
 
-      let particleCount = 50 * (timeLeft / duration);
+      const particleCount = 50 * (timeLeft / duration);
       confetti({
         ...defaults,
         particleCount,
